@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery</title>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+
+    <style>
+      img {
+        border: 2px solid black;
+      }
+      .thumb-rollover {
+        transform: scale(1.1);
+        transition: all 0.4s ease-in-out;
+      }
+
+      .modal {
+        /* display: none; Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+      }
+
+      /* Modal Content/Box */
+      .modal img {
+        background-color: #fefefe;
+        margin-top: 20%;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+      }
+
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: blue;
+        width: 80%;
+      }
+
+      #thumbs li img.selected {
+        border: solid 2px red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="divFlex">
+      <img src="thumbs/baobabs-2708289-1.jpg" alt="" />
+
+      <img
+        src="thumbs/David-Koester-Start-In-Die-Landschaftsfotografie-I.jpg"
+        alt=""
+      />
+
+      <img src="thumbs/DSC2159-Edit1.jpg" alt="" />
+
+      <img src="thumbs/IMG-20170705-WA0002.jpg" alt="" />
+
+      <img src="thumbs/iStock-546424192.jpg" alt="" />
+
+      <img src="thumbs/Lavender-fields-cover.jpg" class="" alt="" />
+
+      <img
+        src="thumbs/PhotographingTwilight_TannerWendellStewart-218136823.jpg "
+        class=""
+        alt=""
+      />
+    </div>
+
+    <div id="image-title"></div>
+
+    <div id="detail" style="width: 80vw; height: 50vw; margin: auto">
+      <img id="main-image" src="" style="display: none" />
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/daw_gallery.js"></script>
+  </body>
+</html>
